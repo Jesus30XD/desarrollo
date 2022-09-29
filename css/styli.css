@@ -1,0 +1,127 @@
+body{
+    background-image: repeating-linear-gradient(
+        -45deg,
+        #ffffff 0px,
+        #ffffff 20px,
+        #b1e0ff 20px,
+        #b1e0ff 40px
+    );
+}
+div{
+    width: 200px;
+    height: 200px;
+    float: left;
+    margin: 5px;
+    background-image: linear-gradient(red, black);
+    border: 1px solid gray;
+    color: white;
+}
+#d2{
+    transform: scale(1,.5);
+}
+#d3{
+    transform: rotate(45deg);
+}
+#d4{
+    transform: skewX(-45deg);
+}
+#d5{
+    transform: skewY(-45deg);
+}
+
+#contenedor{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    left: 500px;
+    top: 50px;
+}
+
+p{color: white;}
+
+#tran1{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(red, black);
+    border-radius: 5px;
+    transition: width 1s;
+}
+
+#tran1:hover{
+    width: 300px;
+}
+
+#tran2{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(blue, black);
+    border-radius: 5px;
+    transition: width 1s, heigth 1s;
+}
+
+#tran2:hover{
+    width: 300px;
+    height: 300px;
+}
+
+#tran3{
+    width: 100px;
+    height: 100px;
+    background-image: linear-gradient(brown, black);
+    border-radius: 5px;
+    transition: width 1s, heigth 1s, transform 2s;
+}
+
+#tran3:hover{
+    width: 300px;
+    height: 300px;
+    transform: rotate(360deg);
+}
+
+p{
+    color: white;
+}
+
+#Contenedor{
+    position: relative;
+    width: 500px;
+    height: 500px;
+    left: 500px;
+    top: 50px;
+}
+
+#mini{
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 150px;
+}
+#mini:hover{
+    box-shadow: 0 0 2px 1px;
+}
+
+.paginacion{
+    margin: 20px 0;
+}
+.paginacion ul{
+    list-style: none;
+    text-align: center;
+}
+.paginacion ul li{
+    display: inline-block;
+    margin-right: 10px;
+}
+.paginacion ul li a{
+    display: block;
+    padding: 10px 20px;
+    color: #fff;
+    background: #024959;
+    text-decoration: none;
+}
+.paginacion ul li a:hover{
+    background: #037E8C;
+}
+.paginacion ul li .active{
+    background: #037E8C;
+    font-weight: bold;
+}

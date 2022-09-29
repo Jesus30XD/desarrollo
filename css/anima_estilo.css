@@ -1,0 +1,34 @@
+.anima1{
+  width: 200px;
+  height: 200px;
+  background-image: linear-gradient(red, black);
+  animation: escalas 2s linear;
+}
+
+p{
+  color: white;
+}
+
+#contenedor{
+  position: relative;
+  width: 500px;
+  height: 500px;
+  left: 500px;
+  top: 50px;
+}
+
+
+@keyframes escalas {
+  0% {
+    -webkit-transform: scale(1) rotateX(0);
+            transform: scale(1) rotateX(0);
+  }
+  50% {
+    -webkit-transform: scale(2.5) rotateX(-90deg);
+            transform: scale(2.5) rotateX(-90deg);
+  }
+  100% {
+    -webkit-transform: scale(1) rotateX(-180deg);
+            transform: scale(1) rotateX(-180deg);
+  }
+}
